@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.oo_concepts.graphicshape;
+package br.com.juliocnsouza.ocpjp.class_design.graphicshape;
 
 /**
  * @author Júlio César Nunes de Souza
