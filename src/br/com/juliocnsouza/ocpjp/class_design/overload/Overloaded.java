@@ -1,6 +1,6 @@
-package br.com.juliocnsouza.ocpjp.class_design;
+package br.com.juliocnsouza.ocpjp.class_design.overload;
 
-import br.com.juliocnsouza.ocpjp.class_design.graphicshape.Circle;
+import br.com.juliocnsouza.ocpjp.class_design.app.graphicshape.Circle;
 
 /**
  * @author Júlio César Nunes de Souza
