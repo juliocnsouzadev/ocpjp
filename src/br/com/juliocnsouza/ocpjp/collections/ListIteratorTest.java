@@ -14,7 +14,7 @@ import java.util.ListIterator;
  */
 public class ListIteratorTest {
 
-    public static void main( String[] args ) {
+    public static void simpleTest() {
         List<String> lista = new LinkedList<>( Arrays.asList( "PARA FRENTE" ,
                                                               "PARA TRÁS" ) ); //iterface List prove metodo listIterator
         ListIterator<String> listIterator = lista.listIterator(); // ListIterator extends Iterator
@@ -52,6 +52,10 @@ public class ListIteratorTest {
             counter++;
 
         }
+    }
+
+    public static void main( String[] args ) {
+        simpleTest();
     }
 
 }
