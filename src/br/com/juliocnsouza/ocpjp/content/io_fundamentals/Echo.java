@@ -12,6 +12,10 @@ import java.io.Console;
 public class Echo {
 
     public static void main( String[] args ) {
+        String str = " ";
+        String[] splited = str.split( " " );
+        System.out.println( "-> " + splited.length );
+
         Console console = System.console();
         /*
          * Se a JVM é invocada indiretamente pela IDE, ou se a JVM é invocada a
