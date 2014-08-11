@@ -15,15 +15,17 @@ public class SpecialCharHandling {
         double d = -19.080808;
         System.out.println( "-> " + String.valueOf( d ) );
 
-// string has three Scandinavian characters
+// string tem 2 caracteres Scandinavos
         String scandString = "å, ä, and ö";
-// try printing scandinavian characters directly with println
+// tentando exibir caracteres scandinavos diretamente com println
         System.out.println(
                 "Printing scands directly with println: " + scandString );
-// now, get the Console object and print scand characters thro' that
+// agora com um objeto console
         Console console = System.console();
-        console.printf(
-                "Printing scands thro' console's printf method: " + scandString );
+        if ( console != null ) {
+            console.printf(
+                    "Printing scands thro' console's printf method: " + scandString );
+        }
     }
 
 }
