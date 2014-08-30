@@ -1,0 +1,44 @@
+Objetivos:
+Usar modificadores de acesso: private, protected e public
+Sobrescrever métodos
+Sobrecarregar métodos
+Sobrecarregar construtores
+Usar o operador intance of e casting
+Usar invocação virtual de métodos
+Sobrescrever métodos da classe Object e melhorar suas funcionalidades em sua classe
+Usar declarações de import e package
+Códigos em https://github.com/juliocnsouzadev/ocpjp
+
+Resumo
+
+Fundamentos de POO
+• Encapsulamento: Combinar dados e funções em uma única unidade
+• Abstração: Esconder detalhes de baixo nível e expor somente os detalhes relevantes e essenciais para os usuários
+• Herança: Criar relacionamentos hirarquicos entre as classes
+• Polimorfismo: Intepretar a mesma chamada de métodos com diferentes significados dependendo do contexto
+
+Fundamentos de Classe
+• Uma classe é um template e um objeto é uma instancia de uma classe
+• Um construtor não tem um tipo de retorno
+• Você não pode acessar métodos privados de uma classe base em uma subclasse
+• Você pode acessar métodos protegidos em uma subclasse ou em classe do mesmo pacote.
+• Você também pode acessar um método com modificar default se este estiver no mesmo pacote
+• Você pode acessar métodos públicos de uma classe de qualquer classe
+
+Sobrecarga
+• Você pode ter contrutores sobrecarregados. Você pode chamar um construtor de uma mesma classe em outro contrutor usando a palavra-chave this
+• Sobrecarregar método: é criar métodos com o mesmo nome mas com parametros de tipos ou quantidades diferentes
+• Resolução de sobrecarga é o processo em que o compilador procura um método apropriado para os parametros passados nos métodos sobrecarregados disponíveis
+
+Herança
+• Herança é também chamada de relacionamento “é um”
+• Chamar um método baseado em tipo de objeto dinamicamente é chamado de polimorfismo em tempo de execução
+• Ao sobrescrever, o nome de um método, o número de argumentos, tipo de argumentos e tipo de retorno devem ser exatamente os mesmos
+• Com retornos com co-variantes, você prove uma subclasse do tipo retornado em um método sobrescrito
+• Você pode usar a palavra chave super para chamar métodos da classe base
+• Sobrecarga é uma exemplo de polimorfismo estático, enquanto que sobrescrita é um exemplo de polimorfismo dinamico
+• Você não precisa de fazer uma cast explícito para supertipos.
+• Você precisa de fazer uma cast explícito para subclasses. Como isso pode falhar user o operador instance of para garatir a validade do cast
+
+Pacotes Java
+• Um pacote é um escopo de construção para categorizar suas classes e prover gerenciamento de nome espaço
