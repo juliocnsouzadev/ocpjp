@@ -1,0 +1,32 @@
+Objetivos:
+Identificar como e quando usar classes abstratas
+Construir classes abstratas e subclasses
+Usar palavras chaves static e final
+Criar classes aninhadas
+Usar Enumerações
+Códigos em https://github.com/juliocnsouzadev/ocpjp
+
+Resumo
+Abstract Classes
+• Uma abstração fornece funcinalidades sem mostrar detalhes da implementação.
+• Você não pode criar intancias de uma classe abstrata.
+• Classes abstratas permitem polimorfismo em tempo de execução e polimofirmos em tempo de execução diminui o acoplamento entre as classes.
+Usando “final” Keyword
+• Uma classe final não pode ser herdada.
+• Um método final não pode ser sobrescrito.
+• Todos os métodos de uma classe final, são implicitamente final.
+• Uma variável final pode ser designada apenas uma vez.
+Usando “static” Keyword
+• Existem dois tipos de variáveis membro: variáveis de class e variáveis de instancia. Todas variáveis que necessitam de uma instancia de uma classe para serem acessadas são conhecidas como variáveis de instancia. Todas variáveis que são compartilhadas por todas intancias e associadas a uma classe e não a um objeto são referenciadas com variáveis de class (usam static em sua declaração)
+• Todos membros estáticos não necessitam de uma instancia para serem acessados, pode ser acessados pelo no nome da classe.
+• Um membro estático pode acessar ou chamar apenas outros membros estáticos sem uma instancia.
+Sabores de Nested Classes
+• Java suporta 4 tipos de classes aninhadas: static nested classes, inner classes, local inner
+classes, and anonymous inner classes.
+• Static nested classes podem ter static members, enquanto que outros tipos de classes aninhadaas não podem.
+• Static nested classes e inner classes podem acessar membros da outer class (mesmo que privados). Contudo, static nested classes podem acessar somente static members da outer class.
+• Local classes (tanto local inner classes quanto anonymous inner classes) podem acessar qualquer variável do escopo em que foram declaradas (metodos, contrutores ou blocos).
+• Enum são uma forma segura de restringir a entrada de dados de usuários.
+• You cannot use new with enums, even inside the enum definition.
+• Enum classes são default final classes.
+• Todas enum classes são implicitamente derivadas de java.lang.Enum.
