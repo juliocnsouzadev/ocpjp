@@ -1,0 +1,17 @@
+Objetivos:
+buscar, converter e construir strings
+buscar converter e substituir strings com expressões regulares
+formatar string usando parâmetros
+Códigos em https://github.com/juliocnsouzadev/ocpjp
+Resumo
+Searching, Parsing, and Building Strings
+- Você pode usar uma das versões sobrecarregadas do método indexOf() e lastIndexOf() para fazer buscas em Strings. Use regionMatches() para compara uma região de texto dentro de uma String.
+- Para converter um tipo primitivo para um objeto String, você pode usar uma das sobrecargas do método valueOf(), que recebe um primitivo como argumento e retorna uma uma String. Para converter uma String para um tipo primitivo use os metodos parse disponíveis nos wrappers correspondentes;
+- Para fazer um parse de uma String, você pode usar o método split() que recebe um delimitador como argumento que é uma expressão regular e retorna um array de Strings.
+Regular Expressions
+- Um expressão regular define uma busca por um padrão que pode ser usado para executar operações como busca de String e manipulação de Strings.
+- User as classes Patter e Matcher quadn o estiver fazer buscas ou substituições em String, pois são o meio mais eficiente e rápido de realizar tais operações.
+- Você pode formar grupos em uma regex. Esses grupos podem ser usados para especificar quantificadores em uma parte da regex. Esses grupos tanbém podem ser usados para espeficicar o retorno de uma referência.
+String Formatting
+- O método printf() (e o método format() da classe String) usa especificadores para formatar Strings.
+- Cada especificador começa com ‘%’ seguido de flags, tamanho e precisão da informação. Terminando com especificador de tipo de dados. Tamanho e precisão da informação, são opcionais, porém ‘%’ e espeficadores de tipo são obrigatórios
