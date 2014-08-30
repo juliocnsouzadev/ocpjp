@@ -1,0 +1,24 @@
+Objetivos:
+• escrever código que declare, implemente ou estenda interfaces
+• escolher entre o uso de herança de classes ou implementar interfaces
+• desenvolver código que implemente relacionamentos é-um e tem-um
+• aplicar princípios de composição
+• desenvolver código implementando os Design Patters: Siglenton, Factory, Abstract Factory e DAO
+Códigos em https://github.com/juliocnsouzadev/ocpjp
+Resumo
+Interfaces
+• É um contrato que define um protocolo do que deve ser feito, mas não como.
+• Não pode ser instanciada, mas pode herdar outras interfaces.
+• Todos os métodos declarados em uma interface são implicitamente considerados abstratos.
+• Uma classe Abstrata e uma interfaces possuem conceitos similares. Contudo cada uma deve ser usada corretamente baseado no contexto.
+Object Composition
+• Herança determina relacinamento ‘é-um’, interface determina ‘é-como-um’, e composição determina ‘tem-um’.
+• Favoreça composição ao invés da herança sempre que possível.
+• Programe para uma interface e não para implementação.
+Design Patterns
+• Observer é o padrão de projeto que diminui o acoplamento entre o objeto e seus obeservadores.
+• Singleton é o padrão de projeto que assegura que apenas uma intância de um objeto será criada.
+• Garantir que um singleton seja mesmo um singleton, especialmente em um ambiente multi-thread, não pe uma tarefa trivial.
+• Factory é o padrão de projeto que provê instâncias sob demanda.
+• Abstract Factory é o padrão de projeto que deve ser usado quando existe uma família de objetos a ser criado.
+Padrões de Projeto são soluções reutilizáveis para problemas recorrentes. O padrão DAO basicamente separa a lógica do negócio da lógica de persistência.
