@@ -1,0 +1,44 @@
+Pontos para Relembrar Java I/O
+
+ - quando estiver usando buffered streams você deve chamar flush() assim que terminar a transmissao de dados. O buffer interno pode estar segurando alguns dados que serão limpos e enviados para o destino assim que você chamar flush(). Contudo o metodo close() no stream irá automaticamente chamar flush()
+
+ - Você deve ter observado que você pode combinar stream de objetos. Você pode criar um objeto de BufferdInputStream que recebe um FileInputStrem. Dessa forma a saída de um stream está encadeada ao stream filtrado. Esse é o jeito importante, útil e bonito de personalizar o stream do modo desejado.
+
+- A interface Serializable é uma interface de marcação. Isso significa que a interface Serializable  não delclara nenhum método.
+
+- Se você quiser personalizar o processo de serialização, você pode implementar readObjetc() e writeObject(). Note que ambos os métdoos são privados, o que significa que você não está sobrecarregando nem sobrescrevendo esses métodos. Isso soa estrano mas esse é o modo de personalização processo de serialização implentado na JVM
+
+- Como discutido anteriormente, uma serialização de um objeto pode ser comunicada pela rede e a deserialização ocorrer em outra máquina. Contudo, o arquivo da classe do objeto deve estar no path da máquina destino, senão somente o estado do objeto será restaurado não o objeto todo (você não poderá invocar um método no objeto restaurado).
+
+- Você pode criar seu próprio protocolo de serialização. Para isso vocÊ precisa implementar a interface Externalizable ao invés de Serializable.
+
+- Quando você não especificar  serialVersionUID em uma classe serializada, a JVM faz isso para você. Contudo cada implementação da JVM tem um mecanismo diferente para fazer isso, assim não é garantido que sua classe serializada irá funcionar em 2 diferentes JVMs quando você não tiver especificado o serialVersionUID explicitamente. Sendo assium é muito recomendado fazer isso.
+
+Resumo
+
+Lendo e escrevendo Dados para Console
+- Você pode obter uma referencia para o console usando System.console(), se a JVM não estiver associada a nenhum console, esse método irá falhar e retornar null.
+
+- Muitos métodos são providos no Console. Você pode usar printf() e format() da classe Console para exibir texto formado, o metodos sobrecarregados readLine() e readPassword() recebem strings como argumento.
+
+- Use o metodo readpassword() para ler textos seguros como senhas. É recomendado usar o método fill() para esvaziar a senha lida no array de caracteres.
+
+- Os métodos na classe Console tem melhor suporte para caracteres especiais quando comprados com exibir textos de PrintStreams.
+
+Leitura e escrita de arquivos com Streams
+
+- o pacote java.io tem classes que suportam stream de bytes e de caracteres.
+
+- Voce pode usar stream de caracteres para I/O baseadas em texto. Byte streams são usados para I/O de dados.
+
+- Strams de caracteres para leitura e escrita são chamados de readers e writers respectivamente (representados pelas classes abstratas de Reader e Writer)
+
+- Streams de Bytes para leitura e escrita são chamados de input streams e output streams respectivament (representados pelas classes abstratas de InputStream e OutputStream)
+
+- Deve-se usar streams de caracteres para processar arquivos de texto (ou arquivos que podem ser lidos por humanos), e streams bytes para arquivos de dados. Se você usar um tipo de stream no lugar de outro, seu programa não funcionará como esperado.
+
+- Tanto para stream de caracteres quanto de bytes você pode usar buffer. Usar buffer vão aumentar a velocidade do I/O e suas operações.
+
+- Para processar dados com primitivos  e strings você pode usar stream de dados,
+
+- Serialização é o processo de converter objetos na memória em uma serie de bytes.
