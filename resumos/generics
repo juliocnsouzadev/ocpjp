@@ -1,0 +1,29 @@
+Objetivos:
+criar classes genéricas
+usar sintaxe diamond para criar uma collection
+analisar a interoperabilidade de coleções que usam tipo cru e tipos genéricos
+usar classes wrappers a autoboxing
+criar e usar List, Set, Deque
+criar e usar Map
+usar Comparator e Comparable
+ordenar e buscar em arrays e listas
+Códigos em https://github.com/juliocnsouzadev/ocpjp
+Resumo
+Generics
+Generics vão garantir que qualquer tentativa de adicionar elementos de tipos não especificados serão pegos na compilação. Assim, generics oferecem implementação com tipo seguro
+O Java 7 introduziu a sintaxe diamond onde os tipos dos parametros (depois do operador new e do nome da classe) podem ser omitidos. O compilador checará os tipo da declaração.
+Generics não aceitam tipos covariantes. Ou seja, subtipos não são aceitos em generics. Não se pode passar um subtipo para um paramentro com o tipo base declarado.
+<?> especifica um tipo desconhecido em generics e é conhecido como wildcard. Por exemplo List<?> se referencia a uma lista de tipo desconhecido.
+Wildcards podem ser delimitados. Por exemplo, <? extends Runnable> implica que ? pode ser qualquer tipo do tipo Runnable. Extends é inclusivo, isso que dizer que Runnable e seus subtipos são aceitos. Caso fossem apenas subtipos de Runnable seria declarado <? super Runnable>.
+Extends serve tanto para classes quanto para interfaces, para multiplos tipos base deve-se usar &. Por Exemplo: List<? extends X e Y>
+Collections Frameword
+Evite misturar tipos crus com genéricos. Se usar, tenha certeza de garantir um tipo seguro manualmente.
+java.uitl.Collection é a interface raiz da hierarquia de coleções.
+java.util.Collections é uma classe utilitaria que contém somente métodos estáticos.
+O termo geral coleções se refere aos containers como Map, Stack, Queue, etc.
+As classes container guarda referências a objetos, assim não é permitido o uso de tipos primitivos.
+Os métodos equals() e hashCode() precisam ser consistentes em uma classe. Para propósitos práticos, garanta que você segue esta regra: o método hashCode() deve voltar o mesmo valor hash para objetos que retornam true para equals()
+Se você estiver usando um objeto container como HashSet ou HashMap, tenha certeza que você sobrescreva os métodos equals() e hashCode() apropriadamente.
+A interface Map não estende a interface Collection.
+Não é recomendado que você guarde null como um argumento, já que exitem métodos na interface Deque que retornam null, seria difícil distinguir se o metodo teve sucesso ou falhou.
+Implemente a interface Comparable para suas classes onde uma ordem natural é possível. Se você quer comparar de outra forma que não seja a ordem natural, então crie novas classes usando a interface Comparator, assim você poderá ter múltiplas formas para ordenar.
