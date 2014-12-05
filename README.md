@@ -5,8 +5,8 @@ OCPJP
 
 * Java Class Design
 [Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-design-de-classes-java/)
- [Blog Post Video 1](http://www.juliocnsouza.com.br/video-revisao-ocp-java-programmer-7-class-design-parte-01/)
- [Blog Post Video 2](http://www.juliocnsouza.com.br/video-revisao-ocp-java-programmer-7-class-design-parte-02/)
+ - [Blog Post Video 1](http://www.juliocnsouza.com.br/video-revisao-ocp-java-programmer-7-class-design-parte-01/)
+ - [Blog Post Video 2](http://www.juliocnsouza.com.br/video-revisao-ocp-java-programmer-7-class-design-parte-02/)
 * Advanced Class Design
 [Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-design-de-classes-avancado-java/)
 * Object-Oriented Design Principles
