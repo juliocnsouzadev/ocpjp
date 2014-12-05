@@ -16,6 +16,10 @@ OCPJP
 * String Processing
  - [Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-string-processing/)
 * Java I/O Fundamentals
+ - [Blog Post 1](http://www.juliocnsouza.com.br/java-io-classe-console/)
+ - [Blog Post 2]()
+ - [Blog Post 3]()
+ - [Blog Post 4]()
 * Java File I/O (NIO.2)
 * Building Database Applications with JDBC
 * Exceptions and Assertions
