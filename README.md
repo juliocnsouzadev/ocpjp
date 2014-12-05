@@ -12,6 +12,7 @@ OCPJP
 * Object-Oriented Design Principles
 [Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-pricipios-poo/)
 * Generics and Collections
+[Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-generics-and-collections/)
 * String Processing
 * Java I/O Fundamentals
 * Java File I/O (NIO.2)
