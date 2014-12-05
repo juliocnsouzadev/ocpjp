@@ -20,7 +20,7 @@ OCPJP
  - [Blog Post 2](http://www.juliocnsouza.com.br/java-io-ler-e-escrever-arquivos-parte-1-stream-de-caracteres/)
  - [Blog Post 3](http://www.juliocnsouza.com.br/java-io-ler-e-escrever-arquivos-parte-2-stream-de-caracteres-com-busca/)
  - [Blog Post 4](http://www.juliocnsouza.com.br/java-io-ler-e-escrever-arquivos-parte-3-stream-de-bytes/)
- - [Blog Post 5]()
+ - [Blog Post 5](http://www.juliocnsouza.com.br/java-io-ler-e-escrever-arquivos-final/)
 * Java File I/O (NIO.2)
 * Building Database Applications with JDBC
 * Exceptions and Assertions
