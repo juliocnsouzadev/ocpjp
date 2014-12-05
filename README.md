@@ -14,6 +14,7 @@ OCPJP
 * Generics and Collections
 [Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-generics-and-collections/)
 * String Processing
+[Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-string-processing/)
 * Java I/O Fundamentals
 * Java File I/O (NIO.2)
 * Building Database Applications with JDBC
