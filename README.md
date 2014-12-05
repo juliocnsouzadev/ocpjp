@@ -1,10 +1,12 @@
 OCPJP
 =====
 
-Codes from OCPJP preparation
+## Codes from OCPJP preparation
 
 * Java Class Design
+[Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-design-de-classes-java/)
 * Advanced Class Design
+[Blog Post](http://www.juliocnsouza.com.br/video-revisao-ocp-java-programmer-7-class-design-parte-01/)
 * Object-Oriented Design Principles
 * Generics and Collections
 * String Processing
@@ -14,6 +16,7 @@ Codes from OCPJP preparation
 * Exceptions and Assertions
 * Threads
 * Concurrency
+[Blog Post]()
 
 
 
