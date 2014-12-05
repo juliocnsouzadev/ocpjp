@@ -9,6 +9,7 @@ OCPJP
 [Blog Post1](http://www.juliocnsouza.com.br/video-revisao-ocp-java-programmer-7-class-design-parte-01/)
  [Blog Post2](http://www.juliocnsouza.com.br/video-revisao-ocp-java-programmer-7-class-design-parte-02/)
 * Object-Oriented Design Principles
+[Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-pricipios-poo/)
 * Generics and Collections
 * String Processing
 * Java I/O Fundamentals
