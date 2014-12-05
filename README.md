@@ -17,7 +17,7 @@ OCPJP
  - [Blog Post](http://www.juliocnsouza.com.br/revisao-ocpjp-string-processing/)
 * Java I/O Fundamentals
  - [Blog Post 1](http://www.juliocnsouza.com.br/java-io-classe-console/)
- - [Blog Post 2]()
+ - [Blog Post 2](http://www.juliocnsouza.com.br/java-io-ler-e-escrever-arquivos-parte-1-stream-de-caracteres/)
  - [Blog Post 3]()
  - [Blog Post 4]()
 * Java File I/O (NIO.2)
