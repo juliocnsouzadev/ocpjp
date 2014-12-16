@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.string_processing;
+package oldcodes.string_processing;
 
 /**
  * TestStringConvertions.java -> Job:
