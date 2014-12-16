@@ -1,4 +1,5 @@
 ### Preparação para exame:
+
 # Oracle Certified Professional 7 Programmer 
 ## 1Z0-805
 
