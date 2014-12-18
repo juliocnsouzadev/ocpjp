@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.class_design.statics;
+package oldcodes.class_design.statics;
 
 import java.util.Random;
 

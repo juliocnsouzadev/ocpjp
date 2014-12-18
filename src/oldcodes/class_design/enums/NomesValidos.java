@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.class_design.enums;
+package oldcodes.class_design.enums;
 
 /**
  * NomesValidos.java -> Job:

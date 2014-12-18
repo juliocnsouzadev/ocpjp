@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.class_design.cast;
+package oldcodes.class_design.cast;
 
 
 /**

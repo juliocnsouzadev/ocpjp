@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.class_design.nasted_classes;
+package oldcodes.class_design.nasted_classes;
 
 /**
  * NastedClasses.java -> Job:

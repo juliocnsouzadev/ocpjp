@@ -1,6 +1,6 @@
-package br.com.juliocnsouza.ocpjp.content.class_design.app.appcanvas;
+package oldcodes.class_design.app.appcanvas;
 
-import br.com.juliocnsouza.ocpjp.content.class_design.app.graphicshape.Circle;
+import oldcodes.class_design.app.graphicshape.Circle;
 
 /**
  * @author Júlio César Nunes de Souza
