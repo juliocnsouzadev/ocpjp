@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.io_fundamentals;
+package oldcodes.io_fundamentals;
 
 import java.io.Console;
 
