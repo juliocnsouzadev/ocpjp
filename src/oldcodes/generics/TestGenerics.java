@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.generics;
+package oldcodes.generics;
 
 import java.util.Arrays;
 import java.util.List;
