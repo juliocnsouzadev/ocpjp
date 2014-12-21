@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.collections;
+package oldcodes.collections;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
