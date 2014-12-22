@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.design_patterns.observer;
+package oldcodes.design_patterns.observer;
 
 import java.util.Observable;
 
