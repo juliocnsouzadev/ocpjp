@@ -23,7 +23,23 @@ public class Intro {
         System.out.println( "Essa preparação será baseada no guia de estudos:  " + guide
                 + "\nDos Autores: " + authors
                 + "\nE dos testes práticos do Whizlabs (" + tests + ")"
+                + "\n" + content()
                 + "\nBons estudos!" );
+    }
+
+    public static String content() {
+        String content
+               = new StringBuilder( "Conteúdo do programa de estudos:\n" )
+                .append( "I\tAssertions and Java 7 Exceptions\n" )
+                .append( "II\tString Processing, Data Formatting, Resource Bundles\n" )
+                .append( "III\tI/O and NIO\n" )
+                .append( "IV\tAdvanced OO and Design Patterns\n" )
+                .append( "V\tGenerics and Collections\n" )
+                .append( "VI\tInner Classes\n" )
+                .append( "VII\tThreads\n" )
+                .append( "VIII\tJDBC" )
+                .toString();
+        return content;
     }
 
 }
