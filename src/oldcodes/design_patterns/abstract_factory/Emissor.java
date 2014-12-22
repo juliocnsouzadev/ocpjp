@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.design_patterns.abstract_factory;
+package oldcodes.design_patterns.abstract_factory;
 
 /**
  * Emissor.java -> Job:

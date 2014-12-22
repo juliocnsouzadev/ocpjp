@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.design_patterns.abstract_factory;
+package oldcodes.design_patterns.abstract_factory;
 
 /**
  * EmissorVisa.java -> Job:
@@ -7,11 +7,11 @@ package br.com.juliocnsouza.ocpjp.content.design_patterns.abstract_factory;
  * @version 1.0
  * @author Julio Cesar Nunes de Souza (julio.souza@mobilitasistemas.com.br)
  */
-public class EmissorVisa implements Emissor {
+public class EmissorMastercard implements Emissor {
 
     @Override
     public void envia( String msg ) {
-        System.out.println( "Enviando msg Visa..." );
+        System.out.println( "Enviando msg Mastercard..." );
         System.out.println( msg );
     }
 

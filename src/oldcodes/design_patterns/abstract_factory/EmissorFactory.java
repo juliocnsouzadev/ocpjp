@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.design_patterns.abstract_factory;
+package oldcodes.design_patterns.abstract_factory;
 
 /**
  * EmissorFactory.java -> Job:
@@ -7,7 +7,7 @@ package br.com.juliocnsouza.ocpjp.content.design_patterns.abstract_factory;
  * @version 1.0
  * @author Julio Cesar Nunes de Souza (julio.souza@mobilitasistemas.com.br)
  */
-public class ReceptorFactory {
+public class EmissorFactory {
 
     public enum Tipo {
 
@@ -15,14 +15,14 @@ public class ReceptorFactory {
         MASTERCARD
     }
 
-    public Receptor create( Tipo tipo ) {
+    public Emissor create( Tipo tipo ) {
         switch ( tipo ) {
             case VISA:
-                return new ReceptorVisa();
+                return new EmissorVisa();
             case MASTERCARD:
-                return new ReceptorMastercard();
+                return new EmissorMastercard();
             default:
-                throw new IllegalArgumentException( "Tipo receptor invalido" );
+                throw new IllegalArgumentException( "Tipo emissor invalido" );
         }
     }
 }
