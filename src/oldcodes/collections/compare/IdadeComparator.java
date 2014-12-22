@@ -1,19 +1,19 @@
-package br.com.juliocnsouza.ocpjp.content.collections.compare;
+package oldcodes.collections.compare;
 
 import java.util.Comparator;
 
 /**
- * EmailComparator.java -> Job:
+ * IdadeComparator.java -> Job:
  * <p>
  * @since 15/04/2014
  * @version 1.0
  * @author Julio Cesar Nunes de Souza (julio.souza@mobilitasistemas.com.br)
  */
-public class EmailComparator implements Comparator<Pessoa> {
+public class IdadeComparator implements Comparator<Pessoa> {
 
     @Override
     public int compare( Pessoa o1 , Pessoa o2 ) {
-        return ( o1.getEmail().compareTo( o2.getEmail() ) );
+        return o1.getIdade().compareTo( o2.getIdade() );
     }
 
 }

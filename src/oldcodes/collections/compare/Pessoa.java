@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp.content.collections.compare;
+package oldcodes.collections.compare;
 
 /**
  * Pessoa.java -> Job:
