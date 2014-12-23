@@ -102,6 +102,12 @@ public class HandleManyExceptions {
              * fim de compilar o código
              */
             Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ex );
+            //ex = new IOException(); //se voce redesignar o parametro o código não irá mais compilar
+            /*
+             * Tal como acontece com multi- catch, não deve-se ter a atribuição de um novo valor
+             * para o parâmetro de captura de qualquer maneira. A diferença entre este e multi-catch
+             * é onde o erro do compilador ocorre
+             */
             throw ex;
         }
     }
