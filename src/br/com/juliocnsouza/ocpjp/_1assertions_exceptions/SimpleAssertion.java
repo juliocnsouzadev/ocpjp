@@ -11,7 +11,7 @@ package br.com.juliocnsouza.ocpjp._1assertions_exceptions;
  */
 public class SimpleAssertion {
 
-    public double dividirPor2( int paraDividir ) {
+    private double dividirPor2( int paraDividir ) {
         assert ( paraDividir > 0 ) : "Não dá para fazer uma divisão com " + paraDividir;
         return paraDividir / 2;
     }

@@ -11,7 +11,7 @@ package br.com.juliocnsouza.ocpjp._1assertions_exceptions;
  */
 public class ReallySimpleAssertion {
 
-    public double dividirPor2( int paraDividir ) {
+    private double dividirPor2( int paraDividir ) {
         assert ( paraDividir > 0 );
         return paraDividir / 2;
     }
