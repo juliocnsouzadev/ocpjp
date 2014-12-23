@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp._1assertions_exceptions;
+package br.com.juliocnsouza.ocpjp._1assertions;
 
 /**
  * ReallySimpleAssertion.java -> Job:
@@ -9,10 +9,10 @@ package br.com.juliocnsouza.ocpjp._1assertions_exceptions;
  * @version 1.0
  * @author Julio Cesar Nunes de Souza (julio.souza@mobilitasistemas.com.br)
  */
-public class SimpleAssertion {
+public class ReallySimpleAssertion {
 
     private double dividirPor2( int paraDividir ) {
-        assert ( paraDividir > 0 ) : "Não dá para fazer uma divisão com " + paraDividir;
+        assert ( paraDividir > 0 );
         return paraDividir / 2;
     }
 
@@ -22,7 +22,7 @@ public class SimpleAssertion {
      * 2 vá até o campo VM Options e digite: -ea 3 Dê um OK e execute a classe main
      */
     public static void main( String[] args ) {
-        SimpleAssertion reallySimple = new SimpleAssertion();
+        ReallySimpleAssertion reallySimple = new ReallySimpleAssertion();
         double resultado = reallySimple.dividirPor2( 12 );
         System.out.println( "Resultado: " + resultado );
         //resultado = reallySimple.dividirPor2( 0 ); //descomente para ver o AssertionError sendo lançado

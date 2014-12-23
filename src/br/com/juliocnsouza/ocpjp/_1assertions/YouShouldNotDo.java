@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp._1assertions_exceptions;
+package br.com.juliocnsouza.ocpjp._1assertions;
 
 import java.util.Random;
 
