@@ -16,7 +16,7 @@ public class YouShouldNotDo {
     }
 
     //nao é recomendado usar assertions em métodos publicos
-    //e nem usar assertions de formar que possam alterar o estado do programa
+    //e nem usar assertions de forma que possam alterar o estado do programa
     //uma assertiva deve deixar o programa no mesmo estado que antes da expressao
     public void a() {
         assert ( verifica( new Random().nextInt() ) );

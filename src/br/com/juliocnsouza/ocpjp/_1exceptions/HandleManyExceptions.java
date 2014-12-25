@@ -28,10 +28,10 @@ public class HandleManyExceptions {
             obj.throwExceptions();
         }
         catch ( SQLException ex ) {
-            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ex ); //repeted code
+            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ex ); //código repetido
         }
         catch ( IOException ex ) {
-            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ex ); //repeted code
+            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ex ); //código repetido
         }
 
         //desde o java 7
