@@ -5,7 +5,7 @@ package br.com.juliocnsouza.ocpjp._1assertions.tests;
  */
 //O que irá acontecer ao compilar e executar o código abaixo?
 //(assumindo que assertions estejam habilitadas em tempo de execução.)
-public class AssertTest {
+public class AssertTest1 {
 
     private void methodA( int i ) {
         assert i >= 0 : methodB();
@@ -17,7 +17,7 @@ public class AssertTest {
     }
 
     public static void main( String[] args ) {
-        AssertTest test = new AssertTest();
+        AssertTest1 test = new AssertTest1();
         test.methodA( -10 );
     }
 

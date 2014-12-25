@@ -11,8 +11,7 @@ public class AssertTest4 {
 
     public static void main( String[] args ) {
         int i = 0;
-        assert isValid( i ) : "Valor Inválido"; 
-        		// assert expressao1 : expressao2
+        assert isValid( i ) : "Valor Inválido";
         System.out.println( i );
     }
 
