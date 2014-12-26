@@ -18,7 +18,7 @@ public class TryWithResourcesTest {
         char[] in = new char[ 50 ];
         int size = 0;
         File file = new File( "fileWriter2.txt" );
-        try ( FileWriter fw = new FileWriter( file ) ,
+        try ( FileWriter fw = new FileWriter( file ) ;
                 FileReader fr = new FileReader( file ) ) {
             fw.write( "howdy\nfolks\n" );
             size = fr.read( in );
