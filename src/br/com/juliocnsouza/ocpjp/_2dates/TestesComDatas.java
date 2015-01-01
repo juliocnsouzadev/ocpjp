@@ -24,6 +24,9 @@ public class TestesComDatas {
         System.out.println(
                 "Um trilhão de milisegundos caiu no seguinte dia da semana: " + diaSemanaStr );
 
+        cal.add( Calendar.MONTH , 1 ); //adicionando um mês
+        System.out.println( "Nova data: " + cal.getTime().toString() );
+
     }
 
     public static String getDiaSemana( boolean iniciaDomingo , int diaSemana ) {
