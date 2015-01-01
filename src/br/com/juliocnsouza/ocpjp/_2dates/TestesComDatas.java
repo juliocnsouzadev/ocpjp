@@ -27,6 +27,14 @@ public class TestesComDatas {
         cal.add( Calendar.MONTH , 1 ); //adicionando um mês
         System.out.println( "Nova data: " + cal.getTime().toString() );
 
+        cal.roll( Calendar.MONTH , 6 ); //não muda o ano
+        System.out.println( "Nova data: " + cal.getTime().toString() );
+
+        cal.roll( Calendar.DAY_OF_MONTH , 25 ); //nao muda o mes e ano
+        System.out.println( "Nova data: " + cal.getTime().toString() );
+
+        cal.roll( Calendar.HOUR , 14 ); //nao muda o dia, mes e ano
+        System.out.println( "Nova data: " + cal.getTime().toString() );
     }
 
     public static String getDiaSemana( boolean iniciaDomingo , int diaSemana ) {
