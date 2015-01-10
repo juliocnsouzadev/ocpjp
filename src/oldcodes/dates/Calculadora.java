@@ -1,5 +1,7 @@
 package oldcodes.dates;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -25,11 +27,11 @@ public class Calculadora {
             return 0;
         }
 
-        Date dataDif = new Date( timeF + timeI );
+        Date dataDif = new Date( timeF - timeI );
 
         long dia = 1000 * 60 * 60 * 24;
 
-        long diasDif = dataDif.getTime() / dia;
+        long diasDif = ( dataDif.getTime() / dia );
 
         Calendar inicialD = Calendar.getInstance();
         Calendar finalD = Calendar.getInstance();
@@ -57,11 +59,16 @@ public class Calculadora {
         return counter;
     }
 
-    public static void main( String[] args ) {
-        Date dI = new Date( 2000000l );
-        Date dF = new Date();
+    public static void main( String[] args )
+            throws ParseException {
 
-        System.out.println( "-> " + getDias( dI , dF ) );
+        SimpleDateFormat sdf = new SimpleDateFormat( "dd/MM/yyyy" );
+
+        Date dI = sdf.parse( "10/01/2014" );
+        Date dF = new Date();
+        System.out.println( "Data inicial:" + dI );
+        System.out.println( "Data final: " + dF );
+        System.out.println( "Diferença dias " + getDias( dI , dF ) );
 
     }
 
