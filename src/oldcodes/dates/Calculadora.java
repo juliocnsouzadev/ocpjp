@@ -5,14 +5,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Calculadora.java -> Job:
- * <p>
- * @since 09/01/2015
- * @version 1.0
- * @author Julio Cesar Nunes de Souza (julio.souza@mobilitasistemas.com.br)
- */
 public class Calculadora {
+
+    private static final long DIA = 1000 * 60 * 60 * 24;
 
     public static long getDias( Date dataInicial , Date dataFinal ) {
 
@@ -28,25 +23,24 @@ public class Calculadora {
         }
 
         Date dataDif = new Date( timeF - timeI );
+        long diasDif = ( dataDif.getTime() / DIA );
 
-        long dia = 1000 * 60 * 60 * 24;
-
-        long diasDif = ( dataDif.getTime() / dia );
-
-        Calendar inicialD = Calendar.getInstance();
-        Calendar finalD = Calendar.getInstance();
-
-        inicialD.setTime( dataInicial );
-        finalD.setTime( dataFinal );
-
-        int anoI = inicialD.get( Calendar.YEAR );
-        int anoF = finalD.get( Calendar.YEAR );
-
-        int bissextos = getBissextos( anoI , anoF );
+        int bissextos = calcularAnosBissextos( dataInicial , dataFinal );
 
         diasDif += bissextos;
 
         return diasDif;
+    }
+
+    private static int calcularAnosBissextos( Date dataInicial , Date dataFinal ) {
+        Calendar inicialD = Calendar.getInstance();
+        Calendar finalD = Calendar.getInstance();
+        inicialD.setTime( dataInicial );
+        finalD.setTime( dataFinal );
+        int anoI = inicialD.get( Calendar.YEAR );
+        int anoF = finalD.get( Calendar.YEAR );
+        int bissextos = getBissextos( anoI , anoF );
+        return bissextos;
     }
 
     private static int getBissextos( int anoI , int anoF ) {
@@ -59,17 +53,20 @@ public class Calculadora {
         return counter;
     }
 
-    public static void main( String[] args )
-            throws ParseException {
+    public static void main( String[] args ) {
+        if ( args == null || args.length < 2 ) {
+            System.out.println( "Programa sem args" );
+            return;
+        }
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd" );
 
-        SimpleDateFormat sdf = new SimpleDateFormat( "dd/MM/yyyy" );
-
-        Date dI = sdf.parse( "10/01/2014" );
-        Date dF = new Date();
-        System.out.println( "Data inicial:" + dI );
-        System.out.println( "Data final: " + dF );
-        System.out.println( "Diferença dias " + getDias( dI , dF ) );
-
+            Date dI = sdf.parse( args[0] );
+            Date dF = sdf.parse( args[1] );
+            System.out.println( getDias( dI , dF ) );
+        }
+        catch ( ParseException pe ) {
+            System.out.println( "Erro: " + pe.getMessage() );
+        }
     }
-
 }
