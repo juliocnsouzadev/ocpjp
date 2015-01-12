@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Calculadora {
 
-    private static final long DIA = 1000 * 60 * 60 * 24;
+    private static final long DIA_EM_MILIS = 1000 * 60 * 60 * 24;
 
     public static long getDias( Date dataInicial , Date dataFinal ) {
 
@@ -23,13 +23,12 @@ public class Calculadora {
         }
 
         Date dataDif = new Date( timeF - timeI );
-        long diasDif = ( dataDif.getTime() / DIA );
+        long diasDif = ( dataDif.getTime() / DIA_EM_MILIS );
 
-        int bissextos = calcularAnosBissextos( dataInicial , dataFinal );
-
-        diasDif += bissextos;
-
-        return diasDif;
+        //sem calcular bissextos, já que o milis deve prove-los
+        //int bissextos = calcularAnosBissextos( dataInicial , dataFinal );
+        //diasDif += bissextos;
+        return diasDif + 1; //esse + um é para se contar o dia atual
     }
 
     private static int calcularAnosBissextos( Date dataInicial , Date dataFinal ) {
