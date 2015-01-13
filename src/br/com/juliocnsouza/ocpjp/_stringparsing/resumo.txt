@@ -1,0 +1,9 @@
+Parsing,Tokenizing, and Formatting
+
+Objetivos:
+
+- Buscar, analizar e Construir Strings (incluindo Scanner, StringTokeninzer, StringBuilder, String e Formatter)
+
+- Buscar, analizar e substituir strings usando expressões regulares, usando expressões padronizadas para encontrar valores limitados a: . , * , + , ? , \d , \D , \s , \S , \w , \W , \b , \B , [] e ()
+
+- Formatar strings usando os parametros para formatação  %b, %c, %d, %f e %s.
