@@ -18,4 +18,7 @@ Vamos começar com um exemplo bastante simples fazend ouma busca em uma string  
 
 (BuscaSimples.java)
 
+Se inserirmos o padrão 'ul' e o texto para busca 'julio' será encontrado na posição 1.
+
+BUSCA COM METACARACTERES
 vide (481)
