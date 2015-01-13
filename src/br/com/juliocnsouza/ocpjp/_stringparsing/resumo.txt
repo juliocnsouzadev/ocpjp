@@ -1,9 +1,13 @@
 Parsing,Tokenizing, and Formatting
 
-Objetivos:
+OBJETIVOS:
 
 - Buscar, analizar e Construir Strings (incluindo Scanner, StringTokeninzer, StringBuilder, String e Formatter)
 
 - Buscar, analizar e substituir strings usando expressões regulares, usando expressões padronizadas para encontrar valores limitados a: . , * , + , ? , \d , \D , \s , \S , \w , \W , \b , \B , [] e ()
 
 - Formatar strings usando os parametros para formatação  %b, %c, %d, %f e %s.
+
+SEARCH
+
+Expressões regulares são como uma linguagem dentro da linguagem, foram feitas para ajudar programadores com tarefas de busca. Todas linguagens de programação que provém capacidade de usar expressões regulares usa um ou mais engines de regex (expressões regulares). Expressões regulares podem  buscar atraves de um dado de texto usando intruções programadas dentro das expressões. Um expressão regular é como um pequeno programa ou script passado a engine junto com dado de texto que você deseja processar.
