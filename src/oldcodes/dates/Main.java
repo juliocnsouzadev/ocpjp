@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Calculadora {
+public class Main {
 
     private static final long DIA_EM_MILIS = 1000 * 60 * 60 * 24;
 
@@ -23,8 +23,14 @@ public class Calculadora {
 
         Date dataDif = new Date( timeF - timeI );
         long diasDif = ( dataDif.getTime() / DIA_EM_MILIS );
+        double diasDifD = ( dataDif.getTime() / DIA_EM_MILIS );
 
-        return diasDif + 1; //esse + um é para se contar o dia atual
+        double dif = diasDifD - diasDif;
+        if ( dif > 0.5 ) {
+            diasDif++;
+        }
+
+        return diasDif; //esse + um é para se contar o dia atual
     }
 
     public static void main( String[] args ) {
