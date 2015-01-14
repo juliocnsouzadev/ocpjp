@@ -1,4 +1,4 @@
-package br.com.juliocnsouza.ocpjp._stringparsing;
+package br.com.juliocnsouza.ocpjp._2stringparsing;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
