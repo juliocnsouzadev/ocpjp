@@ -19,7 +19,7 @@ public class BuscaDigitosNumericos {
         Pattern p = Pattern.compile( padraoBuscado );
         Matcher m = p.matcher( texto );
 
-        StringBuilder sb = new StringBuilder( "Padrão " + padraoBuscado + " entrado: " );
+        StringBuilder sb = new StringBuilder( "Padrão " + padraoBuscado + " encontrado: " );
         boolean encontrado = false;
         while ( m.find() ) {
             encontrado = true;

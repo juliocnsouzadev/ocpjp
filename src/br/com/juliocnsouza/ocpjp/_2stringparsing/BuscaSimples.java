@@ -21,7 +21,8 @@ public class BuscaSimples {
         Pattern p = Pattern.compile( padraoBuscado );
         Matcher m = p.matcher( valorInserido );
 
-        StringBuilder sb = new StringBuilder( "Padrão " + padraoBuscado + " entrado nas posições: " );
+        StringBuilder sb = new StringBuilder(
+                "Padrão " + padraoBuscado + " encontrado nas posições: " );
         boolean encontrado = false;
         while ( m.find() ) {
             encontrado = true;
