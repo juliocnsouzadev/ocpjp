@@ -24,3 +24,12 @@ BUSCA COM METACARACTERES
 
 Vamos a uma exemplo em que queremos buascar todas as ocorrências de digitos numéricos:
 (BuscaDigitosNumericos.java)
+
+Principais metacaracteres descritos na API de java.util.regex.Pattern:
+
+\d -> encontra um digito(0-9)
+\D -> encontra não dígitos, qualquer coisa menos 0-9
+\s -> em espaço em branco (espaço, \t, \n, \f, \r)
+\S -> encontra tudo que não seja um espaço em branco
+\w -> encontra uma letra (a-z e A-Z, dígitos e underline)
+\W ->
