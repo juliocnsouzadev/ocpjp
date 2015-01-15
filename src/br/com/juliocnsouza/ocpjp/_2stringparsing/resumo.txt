@@ -32,4 +32,10 @@ Principais metacaracteres descritos na API de java.util.regex.Pattern:
 \s -> em espaço em branco (espaço, \t, \n, \f, \r)
 \S -> encontra tudo que não seja um espaço em branco
 \w -> encontra uma letra (a-z e A-Z, dígitos e underline)
-\W ->
+\W -> encontra tudo que não seja letras
+\b -> encontra tudo entre uma sequencia de caratectres \w *
+\B -> encontra o contrário de \b *
+
+* nestes casos, regex está à procura de uma relação específica entre dois personagens adjacentes.
+Quando encontra uma correspondência, ele retorna a posição do segundo personagem. Além disso, observe
+que as extremidades das Strings são considerados "não-letra" caracteres. Veja o exemplo:
