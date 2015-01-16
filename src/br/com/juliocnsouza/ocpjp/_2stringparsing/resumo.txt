@@ -39,3 +39,6 @@ Principais metacaracteres descritos na API de java.util.regex.Pattern:
 * nestes casos, regex está à procura de uma relação específica entre dois personagens adjacentes.
 Quando encontra uma correspondência, ele retorna a posição do segundo personagem. Além disso, observe
 que as extremidades das Strings são considerados "não-letra" caracteres. Veja o exemplo:
+(BuscaBoundary.java)
+
+Veja um exemplo usando todas as regex acima
