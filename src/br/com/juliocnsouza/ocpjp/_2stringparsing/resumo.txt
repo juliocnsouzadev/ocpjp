@@ -43,3 +43,12 @@ que as extremidades das Strings são considerados "não-letra" caracteres. Veja 
 
 Veja um exemplo usando todas as regex acima:
 (Busca.java)
+
+BUSCA USANDO INTERVALOS
+
+Você também pode especificar um grupo de caracteres para ser encontrado usando colchetes e intervalos de caracteres para buscar usando colchetes e um traço:
+- [abc] Busca apenas por a, b ou c
+- [a-f] Busca por a, b, c, d, e ou f
+
+Além disso, você pode buscar por muitos intervalos de uma só vez veja:
+- [a-fA-F] busca pelo primeiros 6 caractes do alfabeto tanto maiusculo, quanto minusculo.
