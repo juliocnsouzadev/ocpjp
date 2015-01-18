@@ -13,9 +13,9 @@ import java.util.regex.Pattern;
 public class BuscaComQuantificadores {
 
     public static void main( String[] args ) {
-        String texto = "12 0x 0x12 0Xf 0xg";
+        String texto = "12 0x 0x12 0Xf 0xg 0X0FFFF 7FFFD4";
 
-        String hexa = "0[xX][0-9a-fA-F]";
+        String hexa = "0[xX]([0-9a-fA-F])+";
 
         Pattern p = Pattern.compile( hexa );
 
@@ -23,7 +23,9 @@ public class BuscaComQuantificadores {
 
         System.out.println( "Encontrou:" );
         while ( m.find() ) {
-            System.out.println( m.start() );
+            int start = m.start();
+            int end = m.end();
+            System.out.println( "start: " + start + "\t->\t" + texto.substring( start , end ) );
         }
 
     }

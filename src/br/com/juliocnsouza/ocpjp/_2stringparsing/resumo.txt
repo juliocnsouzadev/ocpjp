@@ -58,9 +58,9 @@ BUSCA USANDO QUANTIFICADORES
 
 Para mostrar isso vamos dizer que você esteja procurando números hexadecimais, a regex abaixo resolveria o problema:
 
-- 0[xX][0-9a-fA-F]
+- 0[xX]([0-9a-fA-F])+
 
 Essa expressão busca um grupo de caracteres em que '0' éo primeiro caractere, o segundo é um 'x' ou 'X' e o terceiro é uma digito de '0' a '9', uma letra de 'a' a 'f' ou de 'A' a 'F'.
 
 Veja abaixo:
-
+(BuscaComQuantificadores.java)
