@@ -70,3 +70,15 @@ O PONTO PREDEFINIDO
 Em adição aos metacaracteres \s \d e \w é importante entender o '.'. Quando você se deparar com esse caractere em uma regex, significa 'qualquer caracter serve para aqui'
 Veja um exemplo:
 (BuscaPonto.java)
+
+QUANTIFICADORES GANANCIOSOS
+
+Considere o seguinte pattern: .*aa
+
+Ele quer dizer: encontre tudo que termina com 'aa'
+O '*' é ganancioso, então se aplicarmos esse pattern na busca dentro da string: 'asdaafaa'
+O resultado será: Posição: 0, ou seja, fará a busca levando em consideração o recurso todo.
+
+Afim de obtermos 2 posições encotradas, uma para 'asdaa' e outra para 'faa' temos de usar o metacaractere relutante: *?.
+Veja no exemplo:
+(BuscaGananciosaRelutante.java)
