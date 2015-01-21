@@ -86,5 +86,5 @@ Veja no exemplo:
 QUANDO METACARACTERES E STRINGS COLIDEM
 
 Como já vimos em exemplo anteriores quando uma regex como '\s' é usada no código java, temos de colocar um barra extra para escapar o caractere: '\\s'.
-Mas e no caso de operadores como '.' ou '*'? Para evitar que a regex o veja como um caratere podemos usar '\\'. Veja o exemplo anterior alterado.
-(BuscaGananciosaRelutanteEscape.java)
+Mas e no caso de operadores como '.' ou '*'? Para encontrar um caratere ao invés de uma regex podemos usar '\\'. Veja o exemplo anterior alterado.
+(BuscaEscape.java)
