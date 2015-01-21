@@ -82,3 +82,9 @@ O resultado será: Posição: 0, ou seja, fará a busca levando em consideraçã
 Afim de obtermos 2 posições encotradas, uma para 'asdaa' e outra para 'faa' temos de usar o metacaractere relutante: *?.
 Veja no exemplo:
 (BuscaGananciosaRelutante.java)
+
+QUANDO METACARACTERES E STRINGS COLIDEM
+
+Como já vimos em exemplo anteriores quando uma regex como '\s' é usada no código java, temos de colocar um barra extra para escapar o caractere: '\\s'.
+Mas e no caso de operadores como '.' ou '*'? Para evitar que a regex o veja como um caratere podemos usar '\\'. Veja o exemplo anterior alterado.
+(BuscaGananciosaRelutanteEscape.java)
