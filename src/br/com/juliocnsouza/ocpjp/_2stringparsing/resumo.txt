@@ -65,4 +65,7 @@ Essa expressão busca um grupo de caracteres em que '0' éo primeiro caractere, 
 Veja abaixo:
 (BuscaComQuantificadores.java)
 
-O PONTO pg 488
+O PONTO PREDEFINIDO
+
+Em adição aos metacaracteres \s \d e \w é importante entender o '.'. Quando você se deparar com esse caractere em uma regex, significa 'qualquer caracter serve para aqui'
+Veja um exemplo:
