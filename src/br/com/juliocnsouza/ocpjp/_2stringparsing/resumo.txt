@@ -94,3 +94,5 @@ LOCALIZANDO COM CLASSE SCANNER
 A classe Scanner pode ser usada para aplicar regex e ela nos informará quantas partes do dado existe aquela expressao.
 Veja no exemplo:
 (BuscaScanner.java)
+
+TOKENIZING (página 446 livro)
