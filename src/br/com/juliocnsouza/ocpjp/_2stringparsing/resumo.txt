@@ -95,4 +95,6 @@ A classe Scanner pode ser usada para aplicar regex e ela nos informará quantas 
 Veja no exemplo:
 (BuscaScanner.java)
 
-TOKENIZING (página 446 livro)
+TOKENIZING
+
+É o processo de pegar grandes partes de um dado e quebra-los em pequenos pedações, e armazenar esses pequenos pedaços em variáveis.
