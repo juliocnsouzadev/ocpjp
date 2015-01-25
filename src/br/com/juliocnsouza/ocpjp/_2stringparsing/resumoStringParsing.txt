@@ -97,4 +97,4 @@ Veja no exemplo:
 
 TOKENIZING
 
-É o processo de pegar grandes partes de um dado e quebra-los em pequenos pedações, e armazenar esses pequenos pedaços em variáveis. Provavelmente a situação mais comum de se usar tokenizing é na leitura de um arquivo delimitado, de modo a pegar o conteúdo do arquivo e movê-lo para lugares úteis, como objetos, arrays ou coleções.
+É o processo de pegar grandes partes de um dado e quebra-los em pequenos pedações, e armazenar esses pequenos pedaços em variáveis. Provavelmente a situação mais comum de se usar tokenizing é na leitura de um arquivo delimitado, de modo a pegar o conteúdo do arquivo e movê-lo para lugares úteis, como objetos, arrays ou coleções. Vamos analisar 2 classes na API que provem essa capacidade: String (usando split()) e Scanner, que contém muitos métodos úteis para tokeninzing.
