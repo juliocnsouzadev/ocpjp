@@ -12,8 +12,7 @@ import java.util.Scanner;
 public class ScanNext {
 
     public static void main( String[] args ) {
-        boolean b, b2;
-        int i;
+        boolean b;
         String hits = "";
         String texto = "as coisas eram true para 2 porém deram false para 1";
         Scanner scan1 = new Scanner( texto );
