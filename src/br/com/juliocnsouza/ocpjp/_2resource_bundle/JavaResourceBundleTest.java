@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 /**
  * ResourceBundleTest.java -> Job:
  * <p>
- * @since 02/02/2015
+ * @since 03/02/2015
  * @version 1.0
  * @author Julio Cesar Nunes de Souza (julio.souza@mobilitasistemas.com.br)
  */
