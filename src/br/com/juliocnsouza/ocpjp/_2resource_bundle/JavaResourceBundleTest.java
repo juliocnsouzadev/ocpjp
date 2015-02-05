@@ -15,7 +15,8 @@ public class JavaResourceBundleTest {
     public static void main( String[] args ) {
         Locale localeEn_CA = new Locale( "en" , "CA" );
 
-        ResourceBundle rb = ResourceBundle.getBundle( "Labels" , localeEn_CA );
+        ResourceBundle rb = ResourceBundle.getBundle(
+                "br.com.juliocnsouza.ocpjp._2resource_bundle.Labels" , localeEn_CA );
         System.out.println( rb.getObject( "hello" ) );
 
     }
