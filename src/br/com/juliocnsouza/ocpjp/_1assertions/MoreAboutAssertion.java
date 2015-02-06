@@ -13,7 +13,7 @@ public class MoreAboutAssertion {
         boolean sourceValida = source != null && !source.isEmpty();
         boolean concatValida = concat != null && !concat.isEmpty();
         assert ( sourceValida );
-        assert ( concatValida );
+        assert ( concatValida ) : "O valor que você está tentando concatenar é nulo ou vazio: " + concat;
         return source += concat;
     }
 
@@ -21,7 +21,9 @@ public class MoreAboutAssertion {
         String julio = concatena( "Jul" , "io" );
         System.out.println( "> " + julio );
 
-        String error = concatena( "" , "io" );
+//        String error = concatena( "" , "io" );
+//        System.out.println( "> " + error );
+        String error = concatena( "Juli" , null );
         System.out.println( "> " + error );
     }
 
