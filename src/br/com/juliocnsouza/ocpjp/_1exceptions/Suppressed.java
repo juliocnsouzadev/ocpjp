@@ -33,6 +33,7 @@ public class Suppressed {
 
 class One implements AutoCloseable {
 
+    @Override
     public void close()
             throws IOException {
         throw new IOException( "Closing" );

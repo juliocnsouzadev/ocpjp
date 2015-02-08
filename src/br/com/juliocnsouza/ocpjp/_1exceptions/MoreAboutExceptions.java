@@ -1,6 +1,9 @@
 package br.com.juliocnsouza.ocpjp._1exceptions;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,6 +25,7 @@ public class MoreAboutExceptions {
     }
 
     public static void main( String[] args ) {
+        // multi catch
         try {
             lancaMuitasExcecoes();
         }
@@ -29,6 +33,15 @@ public class MoreAboutExceptions {
                 IOException |
                 IllegalAccessException e ) {
             Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , e );
+        }
+        //try with resources
+        try ( Reader leitorDoEscopoDoTry = new BufferedReader( new FileReader( "algumArquivo.txt" ) ) ) {
+            if ( leitorDoEscopoDoTry != null ) {
+                leitorDoEscopoDoTry.read();
+            }
+        }
+        catch ( IOException ioe ) {
+            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ioe );
         }
     }
 
