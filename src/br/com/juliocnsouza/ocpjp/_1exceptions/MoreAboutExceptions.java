@@ -17,7 +17,7 @@ public class MoreAboutExceptions {
 
     public static void main( String[] args ) {
         multiCatch();
-        //tryWithResources();
+        tryWithResources();
         la();
     }
 
