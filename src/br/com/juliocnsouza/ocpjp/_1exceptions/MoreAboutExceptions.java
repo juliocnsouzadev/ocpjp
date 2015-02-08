@@ -18,10 +18,10 @@ public class MoreAboutExceptions {
     public static void main( String[] args ) {
         multiCatch();
         tryWithResources();
-        la();
+        supressed();
     }
 
-    private static void la() {
+    private static void supressed() {
         try ( PodeSerInstanciadaNoTryWithResources obj = new PodeSerInstanciadaNoTryWithResources() ) {
             throw new Exception( "lançado no try, exceção principal" );
         }

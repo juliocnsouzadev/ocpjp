@@ -33,7 +33,7 @@ public class TestesComDateFormat {
             System.out.println( "Data inválida = " + data2.toString() );
         }
         catch ( ParseException pe ) {
-            System.out.println( "ParseException: " + pe.getMessage() );
+            System.err.println( "ParseException: " + pe.getMessage() );
         }
 
     }
