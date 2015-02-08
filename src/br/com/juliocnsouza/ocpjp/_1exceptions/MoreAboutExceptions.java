@@ -5,8 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * MoreAboutExceptions.java -> Job:
@@ -17,16 +15,31 @@ import java.util.logging.Logger;
  */
 public class MoreAboutExceptions {
 
-    public static void lancaMuitasExcecoes()
-            throws SQLException ,
-                   IOException ,
-                   IllegalAccessException {
-
-    }
-
     public static void main( String[] args ) {
         multiCatch();
-        tryWithResources();
+        //tryWithResources();
+        la();
+    }
+
+    private static void la() {
+        try ( PodeSerInstanciadaNoTryWithResources obj = new PodeSerInstanciadaNoTryWithResources() ) {
+            throw new Exception( "lançado no try, exceção principal" );
+        }
+        catch ( Exception e ) {
+            System.err.println( e.getMessage() );
+            for ( Throwable t : e.getSuppressed() ) {
+                System.err.println( "exceção suprimida, lançada pelo close de AutoClosable:" + t );
+            }
+        }
+    }
+
+    static class PodeSerInstanciadaNoTryWithResources implements AutoCloseable {
+
+        @Override
+        public void close()
+                throws IOException {
+            throw new IOException( "Fechando..." );
+        }
     }
 
     private static void tryWithResources() {
@@ -36,8 +49,15 @@ public class MoreAboutExceptions {
             }
         }
         catch ( IOException ioe ) {
-            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ioe );
+            System.err.println( ioe.getMessage() );
         }
+    }
+
+    private static void lancaMuitasExcecoes()
+            throws SQLException ,
+                   IOException ,
+                   IllegalAccessException {
+
     }
 
     private static void multiCatch() {
@@ -47,7 +67,7 @@ public class MoreAboutExceptions {
         catch ( SQLException |
                 IOException |
                 IllegalAccessException e ) {
-            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , e );
+            System.err.println( e.getMessage() );
         }
     }
 
