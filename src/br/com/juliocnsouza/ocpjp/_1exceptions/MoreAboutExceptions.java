@@ -25,16 +25,11 @@ public class MoreAboutExceptions {
     }
 
     public static void main( String[] args ) {
-        // multi catch
-        try {
-            lancaMuitasExcecoes();
-        }
-        catch ( SQLException |
-                IOException |
-                IllegalAccessException e ) {
-            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , e );
-        }
-        //try with resources
+        multiCatch();
+        tryWithResources();
+    }
+
+    private static void tryWithResources() {
         try ( Reader leitorDoEscopoDoTry = new BufferedReader( new FileReader( "algumArquivo.txt" ) ) ) {
             if ( leitorDoEscopoDoTry != null ) {
                 leitorDoEscopoDoTry.read();
@@ -42,6 +37,17 @@ public class MoreAboutExceptions {
         }
         catch ( IOException ioe ) {
             Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , ioe );
+        }
+    }
+
+    private static void multiCatch() {
+        try {
+            lancaMuitasExcecoes();
+        }
+        catch ( SQLException |
+                IOException |
+                IllegalAccessException e ) {
+            Logger.getLogger( HandleManyExceptions.class.getName() ).log( Level.SEVERE , null , e );
         }
     }
 
