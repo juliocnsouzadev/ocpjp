@@ -1,9 +1,13 @@
 package br.com.juliocnsouza.ocpjp._3io_nio;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Date;
 
 /**
  * SimplesTesteIO.java -> Job:
@@ -15,7 +19,12 @@ import java.io.InputStreamReader;
 public class SimplesTesteIO {
 
     public static void main( String[] args ) {
-        lerArquivo( "simpleTestIO.txt" );
+        String arquivo = "simpleTestIO.txt";
+        lerArquivo( arquivo );
+        escreverArquivo( arquivo , "Estou escrevendo no arquivo!" ,
+                         "Quando você lê-lo novamente vai ver que essa escrita foi feita em " + new Date().toString() ,
+                         "-----------------------------" );
+        lerArquivo( arquivo );
     }
 
     private static void lerArquivo( String file ) {
@@ -29,6 +38,25 @@ public class SimplesTesteIO {
                                 System.out.println( linha );
                                 linha = reader.readLine();
                             }
+                        }
+                        catch ( Exception e ) {
+                            System.err.println( "Erro: " + e.getMessage() );
+                        }
+    }
+
+    private static void escreverArquivo( String file , String... linhas ) {
+        try ( BufferedWriter escritor = new BufferedWriter(
+                new OutputStreamWriter(
+                        new FileOutputStream(
+                                new File( file
+                                ) ) ) ); ) {
+                            if ( linhas != null ) {
+                                for ( String linha : linhas ) {
+                                    escritor.append( linha );
+                                    escritor.newLine();
+                                }
+                            }
+
                         }
                         catch ( Exception e ) {
                             System.err.println( "Erro: " + e.getMessage() );

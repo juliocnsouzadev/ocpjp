@@ -1,2 +1,3 @@
-Esse é um teste simples com java.io.
-Continue estudando!
+Estou escrevendo no arquivo!
+Quando você lê-lo novamente vai ver que essa escrita foi feita em Sat Feb 14 18:43:48 BRST 2015
+-----------------------------
