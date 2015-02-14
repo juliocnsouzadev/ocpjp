@@ -1,3 +1,3 @@
-Estou escrevendo no arquivo!
-Quando você lê-lo novamente vai ver que essa escrita foi feita em Sat Feb 14 18:43:48 BRST 2015
+Estou escrevendo no arquivo em alto nivel!
+Quando você lê-lo novamente vai ver que essa escrita foi feita em Sat Feb 14 19:00:50 BRST 2015
 -----------------------------
