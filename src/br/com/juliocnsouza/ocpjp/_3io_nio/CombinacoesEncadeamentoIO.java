@@ -43,7 +43,6 @@ public class CombinacoesEncadeamentoIO {
         for ( Writer writer : writers ) {
             writer.write( "Escrevendo de um " + writer.getClass() + "\n" );
             writer.flush();
-
         }
 
         FileReader fr1 = new FileReader( file );
@@ -55,12 +54,18 @@ public class CombinacoesEncadeamentoIO {
         List<Reader> readers = Arrays.asList( fr1 , fr2 , br1 , br2 );
         for ( Reader reader : readers ) {
             if ( reader instanceof BufferedReader ) {
-                System.out.println( "BufferedReader: " + ( ( BufferedReader ) reader ).readLine() );
+                String readLine = ( ( BufferedReader ) reader ).readLine();
+                readLine = readLine != null
+                           ? readLine
+                           : "linha nula";
+                System.out.println( "Lendo de um BufferedReader:\n" + readLine );
+                System.out.println( "--------------------------------" );
             }
             else {
-                char[] sequence = new char[ 150 ];
+                char[] sequence = new char[ 250 ];
                 reader.read( sequence );
-                System.out.println( "FileReader: " + new String( sequence ) );
+                System.out.println( "Lendo de FileReader:\n" + new String( sequence ) );
+                System.out.println( "--------------------------------" );
             }
         }
 
