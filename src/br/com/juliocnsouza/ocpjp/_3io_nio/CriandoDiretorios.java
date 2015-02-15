@@ -28,10 +28,9 @@ public class CriandoDiretorios {
         }
 
         BufferedReader reader = new BufferedReader( new FileReader( testJson ) );
-        String linha = reader.readLine();
-        while ( linha != null ) {
+        String linha;
+        while ( ( linha = reader.readLine() ) != null ) {
             System.out.println( linha );
-            linha = reader.readLine();
         }
     }
 
