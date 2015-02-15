@@ -1,0 +1,2 @@
+Escrevendo de um class java.io.PrintWriter
+screvendo de um class java.io.BufferedWriter
