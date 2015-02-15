@@ -7,7 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -85,11 +85,10 @@ public class SimplesTesteIO {
     }
 
     private static void escreverAtoNivel( String file , String[] linhas ) {
-        try ( PrintStream ps = new PrintStream( new File( file ) ); ) {
+        try ( PrintWriter ps = new PrintWriter( new File( file ) ); ) {
             if ( linhas != null ) {
                 for ( String linha : linhas ) {
-                    ps.append( linha );
-                    ps.append( "\n" );
+                    ps.println( linha );
                 }
             }
         }
