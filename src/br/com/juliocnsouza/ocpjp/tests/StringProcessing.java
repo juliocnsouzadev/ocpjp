@@ -1,5 +1,7 @@
 package br.com.juliocnsouza.ocpjp.tests;
 
+import java.util.Formatter;
+
 /**
  * StringProcessing.java -> Job:
  * <p>
@@ -10,6 +12,7 @@ package br.com.juliocnsouza.ocpjp.tests;
 public class StringProcessing {
 
     static void q1() {
+        System.out.println( "\nq1:" );
         int i = 200;
         double d = 100.00;
         try {
@@ -21,8 +24,17 @@ public class StringProcessing {
 
     }
 
+    static void q2() {
+        System.out.println( "\nq2:" );
+        String s = "hello123";
+        Formatter f = new Formatter();
+        f.format( "%S" , s );
+        System.out.println( f );
+    }
+
     public static void main( String[] args ) {
         q1();
+        q2();
     }
 
 }
