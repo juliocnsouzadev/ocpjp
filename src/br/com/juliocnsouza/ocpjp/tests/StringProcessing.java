@@ -1,6 +1,7 @@
 package br.com.juliocnsouza.ocpjp.tests;
 
 import java.util.Formatter;
+import java.util.regex.Pattern;
 
 /**
  * StringProcessing.java -> Job:
@@ -32,9 +33,22 @@ public class StringProcessing {
         System.out.println( f );
     }
 
+    static void q3() {
+        System.out.println( "\nq3:" );
+        String regex = "t n ";
+        String input = "TNTtnENTn";
+        Pattern p = Pattern.compile( regex , Pattern.CASE_INSENSITIVE | Pattern.COMMENTS );
+        String[] items = p.split( input );
+        for ( String item : items ) {
+            System.out.print( item );
+        }
+        System.out.println( "" );
+    }
+
     public static void main( String[] args ) {
         q1();
         q2();
+        q3();
     }
 
 }
