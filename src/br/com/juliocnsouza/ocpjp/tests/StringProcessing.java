@@ -45,10 +45,28 @@ public class StringProcessing {
         System.out.println( "" );
     }
 
+    static void q4() {
+        System.out.println( "\nq4:" );
+        String s1 = "";
+
+        z:
+        for ( int x = 2 ; x < 7 ; x++ ) {
+            if ( x == 3 ) {
+                continue;
+            }
+            if ( x == 5 ) {
+                break z;
+            }
+            s1 = s1 + x;
+        }
+        System.out.println( s1 );
+    }
+
     public static void main( String[] args ) {
         q1();
         q2();
         q3();
+        q4();
     }
 
 }
