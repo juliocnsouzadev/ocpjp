@@ -62,11 +62,20 @@ public class StringProcessing {
         System.out.println( s1 );
     }
 
+    static void q6() {
+        System.out.println( "\nq6:" );
+        String str1 = "abc";
+        str1 += 42;
+        System.out.println( str1 );
+
+    }
+
     public static void main( String[] args ) {
         q1();
         q2();
         q3();
         q4();
+        q6();
     }
 
 }
