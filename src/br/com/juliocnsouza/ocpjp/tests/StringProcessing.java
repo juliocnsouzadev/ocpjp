@@ -79,6 +79,13 @@ public class StringProcessing {
         StringBuilder s1 = new StringBuilder( "123456789" );
         s1.delete( 0 , 3 ).delete( 1 , 3 ).delete( 2 , 4 ).insert( 1 , "24" );
         System.out.println( s1 );
+    }
+
+    static void q11() {
+        System.out.println( "\nq11:" );
+        StringBuffer s = new StringBuffer( "123456789" );
+        s.delete( 0 , 3 ).replace( 1 , 3 , "24" ).delete( 4 , 6 );
+        System.out.println( s );
 
     }
 
@@ -89,6 +96,7 @@ public class StringProcessing {
         q4();
         q6();
         q9();
+        q11();
     }
 
 }
