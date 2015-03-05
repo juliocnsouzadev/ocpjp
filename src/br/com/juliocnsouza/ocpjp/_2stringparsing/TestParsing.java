@@ -1,4 +1,4 @@
-package oldcodes.string_processing;
+package br.com.juliocnsouza.ocpjp._2stringparsing;
 
 /**
  * TestParsing.java -> Job:
