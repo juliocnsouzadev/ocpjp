@@ -1,4 +1,4 @@
-package oldcodes.dates;
+package br.com.juliocnsouza.ocpjp._2dates;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
