@@ -1,16 +1,16 @@
-package br.com.juliocnsouza.ocpjp.tests;
+package br.com.juliocnsouza.ocpjp._2stringparsing;
 
 import java.util.Formatter;
 import java.util.regex.Pattern;
 
 /**
- * StringProcessing.java -> Job:
+ * StringProcessingTests.java -> Job:
  * <p>
  * @since 23/02/2015
  * @version 1.0
  * @author Julio Cesar Nunes de Souza (julio.souza@mobilitasistemas.com.br)
  */
-public class StringProcessing {
+public class StringProcessingTests {
 
     static void q1() {
         System.out.println( "\nq1:" );
