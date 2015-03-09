@@ -14,6 +14,7 @@ public class ResolvingPath {
 
     public static void main( String[] args ) {
         Path dir = Paths.get( "home/juliocnsouza" );
+        Path file = Paths.get( "modelos/Modelo.pdf" );
     }
 
 }
