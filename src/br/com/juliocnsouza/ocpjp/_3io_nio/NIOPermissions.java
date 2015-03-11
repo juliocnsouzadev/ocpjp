@@ -5,6 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.FileTime;
+import java.util.GregorianCalendar;
+import java.util.Random;
 
 /**
  * NIOPermissions.java -> Job:
@@ -30,6 +32,16 @@ public class NIOPermissions {
 
         System.out.println( "\ntem permissao para executar?" );
         System.out.println( Files.isExecutable( atxt ) );
+
+        System.out.println( "\nmudar data ultima modificacao:" );
+        int ano = 0;
+        while ( ano < 1 ) {
+            ano = new Random().nextInt( 2015 );
+        }
+        fileTime = FileTime.fromMillis(
+                new GregorianCalendar( ano , GregorianCalendar.JULY , 1 ).getTimeInMillis() );
+        Files.setLastModifiedTime( atxt , fileTime );
+        System.out.println( fileTime );
     }
 
 }
