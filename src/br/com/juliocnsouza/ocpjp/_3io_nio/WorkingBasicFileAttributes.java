@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.BasicFileAttributeView;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.nio.file.attribute.FileTime;
 
 /**
  * NIOPermissions.java -> Job:
@@ -20,9 +22,28 @@ public class WorkingBasicFileAttributes {
 
         Path atxt = Paths.get( "a.txt" );
         BasicFileAttributes basic = Files.readAttributes( atxt , BasicFileAttributes.class );
-        System.out.println( "criado em: " + basic.creationTime() );
-        System.out.println( "accessado em: " + basic.lastAccessTime() );
-        System.out.println( "modificado em: " + basic.lastModifiedTime() );
+        FileTime creationTime = basic.creationTime();
+        FileTime lastAccessTime = basic.lastAccessTime();
+        FileTime lastModifiedTime = basic.lastModifiedTime();
+        mostrar( creationTime , lastAccessTime , lastModifiedTime , basic );
+
+        System.out.println( "\nsetando os atributos de a.txt para a_copy.txt" );
+        Path aCopy = Paths.get( "a_copy.txt" );
+        BasicFileAttributeView basicView = Files.getFileAttributeView( aCopy ,
+                                                                       BasicFileAttributeView.class );
+        basicView.setTimes( lastModifiedTime , lastAccessTime , creationTime );
+        basic = Files.readAttributes( aCopy , BasicFileAttributes.class );
+        creationTime = basic.creationTime();
+        lastAccessTime = basic.lastAccessTime();
+        lastModifiedTime = basic.lastModifiedTime();
+        mostrar( creationTime , lastAccessTime , lastModifiedTime , basic );
+    }
+
+    private static void mostrar( FileTime creationTime , FileTime lastAccessTime ,
+                                 FileTime lastModifiedTime , BasicFileAttributes basic ) {
+        System.out.println( "criado em: " + creationTime );
+        System.out.println( "accessado em: " + lastAccessTime );
+        System.out.println( "modificado em: " + lastModifiedTime );
         System.out.println( "é diretório? " + basic.isDirectory() );
     }
 
