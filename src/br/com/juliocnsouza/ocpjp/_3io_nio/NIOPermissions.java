@@ -24,6 +24,9 @@ public class NIOPermissions {
 
         System.out.println( "\ntem permissao para leitura?" );
         System.out.println( Files.isReadable( atxt ) );
+
+        System.out.println( "\ntem permissao para escrever?" );
+        System.out.println( Files.isWritable( atxt ) );
     }
 
 }
