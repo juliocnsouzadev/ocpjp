@@ -17,10 +17,13 @@ public class NIOPermissions {
 
     public static void main( String[] args )
             throws IOException {
-        System.out.println( "pegar a data da ultima modificacao" );
+        System.out.println( "pegar a data da ultima modificacao:" );
         Path atxt = Paths.get( "a.txt" );
         FileTime fileTime = Files.getLastModifiedTime( atxt );
         System.out.println( fileTime );
+
+        System.out.println( "\ntem permissao para leitura?" );
+        System.out.println( Files.isReadable( atxt ) );
     }
 
 }
