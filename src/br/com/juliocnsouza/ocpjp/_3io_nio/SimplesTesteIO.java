@@ -35,6 +35,9 @@ public class SimplesTesteIO {
                          "-----------------------------" );
 
         lerArquivo( arquivo , true );
+
+        System.out.println( "\n\nAgora eh o XML\n\n" );
+        System.out.println( lerBaixoNivel2( "snesTests.xml" ) );
     }
 
     private static void lerArquivo( String file , boolean altoNivel ) {
@@ -73,6 +76,27 @@ public class SimplesTesteIO {
                         catch ( Exception e ) {
                             System.err.println( "Erro: " + e.getMessage() );
                         }
+    }
+
+    private static String lerBaixoNivel2( String file ) {
+        try ( BufferedReader reader = new BufferedReader(
+                new InputStreamReader(
+                        new FileInputStream(
+                                new File( file
+                                ) ) ) ); ) {
+                            String linha = reader.readLine();
+                            StringBuilder sb = new StringBuilder();
+                            while ( linha != null ) {
+                                linha = linha.replace( "  " , " " );
+                                sb.append( linha );
+                                linha = reader.readLine();
+                            }
+                            return sb.toString();
+                        }
+                        catch ( Exception e ) {
+                            System.err.println( "Erro: " + e.getMessage() );
+                        }
+                        return "you loose";
     }
 
     private static void escreverArquivo( String file , boolean altoNivel , String... linhas ) {
